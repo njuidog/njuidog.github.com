@@ -11,7 +11,7 @@
 
 <title>
   
-    CSS &middot; Bootstrap
+    GOLA &middot; Njuidog
   
 </title>
 
@@ -46,37 +46,13 @@ pre code { background: transparent; }
     <a class="sr-only" href="#content">Skip to main content</a>
 
     <!-- Docs master nav -->
-    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="../" class="navbar-brand">Simple Blog</a>
-    </div>
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="../about"> </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+   
 
     <!-- Docs page layout -->
     <div class="bs-header" id="content">
       <div class="container">
         <h2>李强的博客</h2>
-        <p>记录成长生涯中的点滴。。。</p>
-        
+        <p>记录技术成长中的点滴。。。</p>
       </div>
     </div>
 
@@ -90,20 +66,16 @@ pre code { background: transparent; }
             <ul class="nav bs-sidenav">
                   
                 <li>
-  <a href="#buildandstart">从Build&Start说起</a>
-  <ul class="nav">
-    <li><a href="#b1">Build my blog easy and stable!</a></li>
-    <li><a href="#s1">Start my career!</a></li>
-  </ul>
-</li>
-
-
-
-                              
+                     <a href="#buildandstart">从Build&Start说起</a>
+                     <ul class="nav">
+                     <li><a href="#b1">Build my blog easy and stable!</a></li>
+                     <li><a href="#s1">Start my career!</a></li>
+                     </ul>
+                </li>                
             </ul>
           </div>
         </div>
-        <div class="col-md-9" role="main">
+       <div class="col-md-9" role="main">
           
   <!-- Global Bootstrap settings
   ================================================== -->
@@ -111,59 +83,23 @@ pre code { background: transparent; }
     <div class="page-header">
       <h1 id="buildandstart">It's a real 0.</h1>
     </div>
-    <p class="lead">深入了解Bootstrap底层结构的关键部分，包括我们让web开发变得更好、更快、更强壮的最佳实践。</p>
+    <h3 class="lead">在技术的世界里，自己就像是一只在裸奔的白条鸡。但我毫不畏惧，愿自此时：2013-11-24 3:48 起，从无到有。事事记之<small>13.11.24</small></h3>
+    <h3 id="b1">纠结的建小站过程</h3>
+    <p>想要拥有一个可以独立编码的自己的小站是我蓄谋已久的一个想法了，从自己真正接触到HTML CSS和JAVASCRIPT之后，就觉得其实web真的是作为应用的终端的最佳选择，无需虚拟机，跨平台，多语言融合，协议超级通用等等数不清的优势。尤其有了js之后更加生猛无比，非任何终端可以匹敌。windows桌面不行，java平台也不行。</p>
+    <h4>寻找server</h4>
+    <p>在信息时代比较庆幸的一点就是很少走弯路，只要合理使用搜索引擎，就可以得到正确的答案。自然，我一baigoogledu，就将目标瞄准向github这个geek各节的NBserver！多么幸运而幸福的时代~作为geek的平台，自不能没了geek的command&tools横行的恶习。多亏他家的入门文档不错，自心血来潮起直至当夜凌晨，已经可以熟练git shell并且配置成功了自己的git page！那是极其喜悦的时刻~</p>
+    <h4>make static web page work</h4>
+    <p>最直接的就是HTML+JS走起，但通过github看到它家比较推荐jeklly，通过markdown的极易规范语言就可以实现排版编辑等日常博客事物，可无奈windows这破系统在opensource世界里太不招人待见，装几个插件，搭个运行环境都困难重重，及至最后无奈放弃，感叹实非人力所能为，遂放弃此法。但依然寻了些markdown的语言规法来看，发现其实和HTML很像，做了更多的简化而已。但自己转念一想，其实HTML若只是写写博文，po点图，用个浅度定制的框架也是极简单的事情呀~于是便有了现在这个样子的小博客。觉得若要博客长得好看，最主要的还是要内容多多，布局构图配色等倒都只是其次了。希望我的博客能够迅速充实起来</p>
+    <h3 id="s1">从云计算基础架构的那些事开始说起。。。</h3>
 
-    <h3 id="overview-doctype">HTML5文档类型</h3>
-    <p>Bootstrap使用到的某些HTML元素和CSS属性需要将页面设置为HTML5文档类型。在你项目中的每个页面都要参照下面的格式进行设置。</p>
-<div class="highlight">
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt;
-  ...
-&lt;/html&gt;</code></pre>
-
-</div>
-
-    <h3 id="overview-mobile">移动设备优先</h3>
-    <p>在Bootstrap 2中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在Bootstrap 3中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，<strong>Bootstrap是移动设备优先的</strong>。针对移动设备的样式融合进了框架的每个角落，而不是一个单一的文件。</p>
-    <p>为了确保适当的绘制和触屏缩放，需要在<code>&lt;head&gt;</code>之中<strong>添加viewport元数据标签</strong>。</p>
-<div class="highlight">
-<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></pre>
-
-</div>
-    <p>在移动设备浏览器上，通过为viewport meta标签添加<code>user-scalable=no</code>可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式我们并不推荐所有网站使用，还是要看你自己的情况而定！</p>
-<div class="highlight">
-<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;</code></pre>
-
-</div>
-
-    <h3 id="overview-responsive-images">响应式图片</h3>
-    <p>通过添加<code>.img-responsive</code> class可以让Bootstrap 3中的图片对响应式布局的支持更友好。其实质是为图片赋予了<code>max-width: 100%;</code> 和<code>height: auto;</code>属性，可以让图片按比例缩放，不超过其父元素的尺寸。</p>
-<div class="highlight">
-<pre><code class="language-html">&lt;img src=&quot;...&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;</code></pre>
-
-</div>
-
-    <h3 id="overview-type-links">排版和链接</h3>
-    <p>Bootstrap设置了全局样式，包括显示、排版和链接。尤其是，我们还：</p>
-    <ul>
-      <li>为<code>body</code>标签设置了<code>background-color:  #fff;</code>样式</li>
-      <li>设置了排版的基本属性<code>@font-family-base</code>、<code>@font-size-base</code>和<code>@line-height-base</code></li>
-      <li>Set the global link color via <code>@link-color</code> and apply link underlines only on <code>:hover</code></li>
-    </ul>
-    <p>这些样式可以在<code>scaffolding.less</code>文件中找到。</p>
-
-    <h3 id="overview-normalize">Normalize</h3>
-    <p>为了增强跨浏览器表现的一致性，我们使用了<a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize</a>，这是由<a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a>和 <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>维护的一个reset库。</p>
-
-    <h3 id="overview-container">Containers</h3>
-    <p>用<code>.container</code>包裹页面上的内容即可实现居中对齐。在不同的媒体查询阈值范围内都为container设置了<code>max-width</code>，用以匹配栅格系统。</p>
-<div class="highlight">
-<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
-  ...
-&lt;/div&gt;</code></pre>
-
-</div>
   </div>
+
+     <!-- Global Bootstrap settings
+  ================================================== -->
+
+
+
+
 
 
 
