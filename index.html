@@ -1,65 +1,195 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>simple_blog by njuidog</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>
+  
+    CSS &middot; Bootstrap
+  
+</title>
+
+<!-- Bootstrap core CSS -->
+<link href="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="docs.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css" rel="stylesheet">
+<style>
+body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+pre code { background: transparent; }
+</style>
+
+<!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+                               <link rel="shortcut icon" href="favicon.png">
+
+
+
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>极简博客_李强</h1>
-        <p>my simple blog page</p>
+    <a class="sr-only" href="#content">Skip to main content</a>
 
-
-        <p class="view"><a href="https://github.com/njuidog">一个据说很不错的超链接</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <!-- Docs master nav -->
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">Simple Blog</a>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="../about"> </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+    <!-- Docs page layout -->
+    <div class="bs-header" id="content">
+      <div class="container">
+        <h2>李强的博客</h2>
+        <p>记录成长生涯中的点滴。。。</p>
+        
+      </div>
+    </div>
+
+    <!-- Callout for the old docs link -->
     
+
+    <div class="container bs-docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="bs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-sidenav">
+                  
+                <li>
+  <a href="#buildandstart">从Build&Start说起</a>
+  <ul class="nav">
+    <li><a href="#b1">Build my blog easy and stable!</a></li>
+    <li><a href="#s1">Start my career!</a></li>
+  </ul>
+</li>
+
+
+
+                              
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          
+  <!-- Global Bootstrap settings
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="buildandstart">It's a real 0.</h1>
+    </div>
+    <p class="lead">深入了解Bootstrap底层结构的关键部分，包括我们让web开发变得更好、更快、更强壮的最佳实践。</p>
+
+    <h3 id="overview-doctype">HTML5文档类型</h3>
+    <p>Bootstrap使用到的某些HTML元素和CSS属性需要将页面设置为HTML5文档类型。在你项目中的每个页面都要参照下面的格式进行设置。</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+  ...
+&lt;/html&gt;</code></pre>
+
+</div>
+
+    <h3 id="overview-mobile">移动设备优先</h3>
+    <p>在Bootstrap 2中，我们对框架中的某些关键部分增加了对移动设备友好的样式。而在Bootstrap 3中，我们重写了整个框架，使其一开始就是对移动设备友好的。这次不是简单的增加一些可选的针对移动设备的样式，而是直接融合进了框架的内核中。也就是说，<strong>Bootstrap是移动设备优先的</strong>。针对移动设备的样式融合进了框架的每个角落，而不是一个单一的文件。</p>
+    <p>为了确保适当的绘制和触屏缩放，需要在<code>&lt;head&gt;</code>之中<strong>添加viewport元数据标签</strong>。</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code></pre>
+
+</div>
+    <p>在移动设备浏览器上，通过为viewport meta标签添加<code>user-scalable=no</code>可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。注意，这种方式我们并不推荐所有网站使用，还是要看你自己的情况而定！</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;</code></pre>
+
+</div>
+
+    <h3 id="overview-responsive-images">响应式图片</h3>
+    <p>通过添加<code>.img-responsive</code> class可以让Bootstrap 3中的图片对响应式布局的支持更友好。其实质是为图片赋予了<code>max-width: 100%;</code> 和<code>height: auto;</code>属性，可以让图片按比例缩放，不超过其父元素的尺寸。</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;img src=&quot;...&quot; class=&quot;img-responsive&quot; alt=&quot;Responsive image&quot;&gt;</code></pre>
+
+</div>
+
+    <h3 id="overview-type-links">排版和链接</h3>
+    <p>Bootstrap设置了全局样式，包括显示、排版和链接。尤其是，我们还：</p>
+    <ul>
+      <li>为<code>body</code>标签设置了<code>background-color:  #fff;</code>样式</li>
+      <li>设置了排版的基本属性<code>@font-family-base</code>、<code>@font-size-base</code>和<code>@line-height-base</code></li>
+      <li>Set the global link color via <code>@link-color</code> and apply link underlines only on <code>:hover</code></li>
+    </ul>
+    <p>这些样式可以在<code>scaffolding.less</code>文件中找到。</p>
+
+    <h3 id="overview-normalize">Normalize</h3>
+    <p>为了增强跨浏览器表现的一致性，我们使用了<a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize</a>，这是由<a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a>和 <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>维护的一个reset库。</p>
+
+    <h3 id="overview-container">Containers</h3>
+    <p>用<code>.container</code>包裹页面上的内容即可实现居中对齐。在不同的媒体查询阈值范围内都为container设置了<code>max-width</code>，用以匹配栅格系统。</p>
+<div class="highlight">
+<pre><code class="language-html">&lt;div class=&quot;container&quot;&gt;
+  ...
+&lt;/div&gt;</code></pre>
+
+</div>
+  </div>
+
+
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+
+<script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
+<script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
+<script >hljs.initHighlightingOnLoad();</script>
+
+<script src="applications.js"></script>
+
+
+
+<!-- Analytics
+================================================== -->
+    <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+
   </body>
 </html>
