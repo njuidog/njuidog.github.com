@@ -1,131 +1,187 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="">
-<meta name="author" content="">
-
-<title>
-  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+    
     GOLA &middot; Njuidog
-  
-</title>
-
-<!-- Bootstrap core CSS -->
-<link href="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Documentation extras -->
-<link href="docs.css" rel="stylesheet">
-<link href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css" rel="stylesheet">
-<style>
-body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;}
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
-pre code { background: transparent; }
-</style>
-
-<!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
-  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-
-<!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-                               <link rel="shortcut icon" href="favicon.png">
-
-
-
+    
+    </title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Documentation extras -->
+    <link href="docs.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css" rel="stylesheet">
+    <style>
+    body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;}
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+    pre code { background: transparent; }
+    </style>
+    <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="favicon.png">
   </head>
   <body>
-    <a class="sr-only" href="#content">Skip to main content</a>
-
-    <!-- Docs master nav -->
-   
-
     <!-- Docs page layout -->
     <div class="bs-header" id="content">
       <div class="container">
         <h2>李强的博客</h2>
-        <p>记录技术成长中的点滴。。。</p>
+        <p>记录技术成长中的点滴</p>
       </div>
     </div>
-
     <!-- Callout for the old docs link -->
     
-
     <div class="container bs-docs-container">
       <div class="row">
         <div class="col-md-3">
           <div class="bs-sidebar hidden-print" role="complementary">
             <ul class="nav bs-sidenav">
-                  
-                <li>
-                     <a href="#buildandstart">从Build&Start说起</a>
-                     <ul class="nav">
-                     <li><a href="#b1">Build my blog easy and stable!</a></li>
-                     <li><a href="#s1">Start my career!</a></li>
-                     </ul>
-                </li>                
+              
+              <li>
+                <a href="#buildandstart">从Build&Start说起</a>
+                <ul class="nav">
+                  <li><a href="#b1">Build my blog easy and stable!</a></li>
+                  <li><a href="#s1">Start my career!</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#hadoophead">Shell of Hadoop</a>
+                <ul class="nav">
+                  <li><a href="#hdp11">发展历史</a></li>
+                  <li><a href="#hdp12">各种技术名词简介</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
-       <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main">
           
-  <!-- Global Bootstrap settings
-  ================================================== -->
-  <div class="bs-docs-section">
-    <div class="page-header">
-      <h1 id="buildandstart">It's a real 0.</h1>
-    </div>
-    <h3 class="lead">在技术的世界里，自己就像是一只在裸奔的白条鸡。但我毫不畏惧，愿自此时：2013-11-24 3:48 起，从无到有。事事记之<small>13.11.24</small></h3>
-    <h3 id="b1">纠结的建小站过程</h3>
-    <p>想要拥有一个可以独立编码的自己的小站是我蓄谋已久的一个想法了，从自己真正接触到HTML CSS和JAVASCRIPT之后，就觉得其实web真的是作为应用的终端的最佳选择，无需虚拟机，跨平台，多语言融合，协议超级通用等等数不清的优势。尤其有了js之后更加生猛无比，非任何终端可以匹敌。windows桌面不行，java平台也不行。</p>
-    <h4>寻找server</h4>
-    <p>在信息时代比较庆幸的一点就是很少走弯路，只要合理使用搜索引擎，就可以得到正确的答案。自然，我一baigoogledu，就将目标瞄准向github这个geek各节的NBserver！多么幸运而幸福的时代~作为geek的平台，自不能没了geek的command&tools横行的恶习。多亏他家的入门文档不错，自心血来潮起直至当夜凌晨，已经可以熟练git shell并且配置成功了自己的git page！那是极其喜悦的时刻~</p>
-    <h4>make static web page work</h4>
-    <p>最直接的就是HTML+JS走起，但通过github看到它家比较推荐jeklly，通过markdown的极易规范语言就可以实现排版编辑等日常博客事物，可无奈windows这破系统在opensource世界里太不招人待见，装几个插件，搭个运行环境都困难重重，及至最后无奈放弃，感叹实非人力所能为，遂放弃此法。但依然寻了些markdown的语言规法来看，发现其实和HTML很像，做了更多的简化而已。但自己转念一想，其实HTML若只是写写博文，po点图，用个浅度定制的框架也是极简单的事情呀~于是便有了现在这个样子的小博客。觉得若要博客长得好看，最主要的还是要内容多多，布局构图配色等倒都只是其次了。希望我的博客能够迅速充实起来</p>
-    <h3 id="s1">从云计算基础架构的那些事开始说起。。。</h3>
-
-  </div>
-
-     <!-- Global Bootstrap settings
-  ================================================== -->
-
-
-
-
-
-
-
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
-
-
-<script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
-<script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
-<script >hljs.initHighlightingOnLoad();</script>
-
-<script src="applications.js"></script>
-
-
-
-<!-- Analytics
-================================================== -->
-    <script type="text/javascript">
-    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-
-
-  </body>
-</html>
+          <!-- Global Bootstrap settings
+          ================================================== -->
+          <div class="bs-docs-section">
+            <div id="build">
+              <div class="page-header">
+                <h1 id="buildandstart">It's a real 0.</h1>
+              </div>
+              <h3 class="lead">在技术的世界里，自己就像是一只在裸奔的白条鸡。但我毫不畏惧，愿自此时：2013-11-24 3:48 起，从无到有。事事记之<small>13.11.24</small></h3>
+              <h3 id="b1">纠结的建小站过程</h3>
+              <p>想要拥有一个可以独立编码的自己的小站是我蓄谋已久的一个想法了，从自己真正接触到HTML CSS和JAVASCRIPT之后，就觉得其实web真的是作为应用的终端的最佳选择，无需虚拟机，跨平台，多语言融合，协议超级通用等等数不清的优势。尤其有了js之后更加生猛无比，非任何终端可以匹敌。windows桌面不行，java平台也不行。</p>
+              <h4>寻找server</h4>
+              <p>在信息时代比较庆幸的一点就是很少走弯路，只要合理使用搜索引擎，就可以得到正确的答案。自然，我一baigoogledu，就将目标瞄准向github这个geek各节的NBserver！多么幸运而幸福的时代~作为geek的平台，自不能没了geek的command&tools横行的恶习。多亏他家的入门文档不错，自心血来潮起直至当夜凌晨，已经可以熟练git shell并且配置成功了自己的git page！那是极其喜悦的时刻~</p>
+              <h4>make static web page work</h4>
+              <p>最直接的就是HTML+JS走起，但通过github看到它家比较推荐jeklly，通过markdown的极易规范语言就可以实现排版编辑等日常博客事物，可无奈windows这破系统在opensource世界里太不招人待见，装几个插件，搭个运行环境都困难重重，及至最后无奈放弃，感叹实非人力所能为，遂放弃此法。但依然寻了些markdown的语言规法来看，发现其实和HTML很像，做了更多的简化而已。但自己转念一想，其实HTML若只是写写博文，po点图，用个浅度定制的框架也是极简单的事情呀~于是便有了现在这个样子的小博客。觉得若要博客长得好看，最主要的还是要内容多多，布局构图配色等倒都只是其次了。希望我的博客能够迅速充实起来</p>
+              <h3 id="s1">从跳进云计算基础架构这个坑开始</h3>
+              <p>校招期间有幸拿到屌丝度INF的offer，让我这个技术渣逐渐放弃了直接回西安在苦逼为蜗居的构想。注定我会为了每年多出的7w年薪和同学之间的面子问题而投入屌丝度门下。其实直到确定了之后，才知道自己内心里还是喜欢屌丝度的，从我遇到问题或者先百度后google，或者在百度里搜“xxxxx， 知乎”就知道我有多依赖百度这个渣公司，即使知道他基本搜不到权威可信任的答案。这种心理依赖源于打小开始的一种习惯吧，可能是因为百度总是能够最快载入搜索界面的原因。所以其实我依赖的喜欢的就是这种“百度速度”。而极为凑巧的，INF（基础架构部）正是提供这种“百度速度”的引擎系统~所以，<small class="text-warning">主说：要信前定。</small></p>
+            </div>
+            <div id="hadoop">
+            <div class="page-header">
+              <h1 id="hadoophead">shell of hadoop.</h1>
+            </div>
+            <h3 class="lead">hadoop 是web2.0时代的起跳板，对于云计算有着不可磨灭的重要贡献和意义。hadoop和类hadoop架构承载着大多数现有云计算平台，包括google和baidu。hadoop是云计算基础架构的必修课。其easy and stable的思想也让geek们乐在其中。<small>13.11.24</small></h3>
+            <h3 id="hdp11">hadoop发展大事记</h3>
+            <ul style="padding: 0px; margin: 20px; list-style-position: inside; font-family: 微软雅黑, Verdana, sans-serif, 宋体; line-height: 24px; background-color:RGB(220, 220, 210);">
+              <li style="padding: 0px; margin: 0px;">
+              2004年，Google发表论文，向全世界介绍了<font color="#FF0000">MapReduce</font>。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2005年初，为了支持Nutch搜索引擎项目，Nutch的开发者基于Google发布的MapReduce报告，在Nutch上开发了一个可工作的MapReduce应用。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2005年年中，所有主要的Nutch算法被移植到使用MapReduce和<font color="#FF0000">NDFS</font>(Nutch Distributed File System )来运行。</li>
+              <li style="padding: 0px; margin: 0px;">2006年1月，Doug
+              Cutting加入雅虎，Yahoo!提供一个专门的团队和资源将Hadoop发展成一个可在网络上运行的系统。</li>
+              <li style="padding: 0px; margin: 0px;">2006年2月，Apache
+              Hadoop项目正式启动以支持MapReduce和HDFS的独立发展。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2007年，百度开始使用Hadoop做离线处理，目前差不多80%的Hadoop集群用作日志处理。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2007年，中国移动开始在“大云”研究中使用Hadoop技术，规模超过1000台。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2008年，淘宝开始投入研究基于Hadoop的系统——云梯，并将其用于处理电子商务相关数据。云梯1的总容量大概为9.         3PB，包含了1100台机器，每天处理约18000道作业，扫描500TB数据。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2008年1月，Hadoop成为Apache顶级项目。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2008年2月，Yahoo!宣布其搜索引擎产品部署在一个拥有1万个内核的Hadoop集群上。</li>
+              <li style="padding: 0px; margin: 0px;">
+                2008年7月，Hadoop打破1TB数据排序基准测试记录。Yahoo!的一个Hadoop集群用209秒完成1TB数据的排序
+              ，比上一年的纪录保持者保持的297秒快了将近90秒。</li>
+              <li style="padding: 0px; margin: 0px;">2009
+                年3月，Cloudera推出<font color="#FF0000">CDH</font>(Cloudera's
+              Distribution including Apache Hadoop)平台，完全由开放源码软件组成，目前已经进入第3版。</li>
+              <li style="padding: 0px; margin: 0px;">2009年5月，Yahoo的团队使用Hadoop对1
+              TB的数据进行排序只花了62秒时间。</li>
+              <li style="padding: 0px; margin: 0px;">2009年7月 ，Hadoop
+              Core项目更名为Hadoop Common;</li>
+              <li style="padding: 0px; margin: 0px;">2009年7月 ，<font color="#FF0000">MapReduce 和 Hadoop Distributed File System (HDFS)
+              成为Hadoop项目的独立子项目。</font></li>
+              <li style="padding: 0px; margin: 0px;">2009年7月 ，Avro 和 Chukwa
+              成为Hadoop新的子项目。</li>
+              <li style="padding: 0px; margin: 0px;">2010年5月 ，<font color="#FF0000">Avro</font>脱离Hadoop项目，成为Apache顶级项目。</li>
+              <li style="padding: 0px; margin: 0px;">2010年5月 ，<font color="#FF0000">HBase</font>脱离Hadoop项目，成为Apache顶级项目。</li>
+              <li style="padding: 0px; margin: 0px;">2010年5月，IBM提供了基于Hadoop
+              的大数据分析软件——InfoSphere BigInsights，包括基础版和企业版。</li>
+              <li style="padding: 0px; margin: 0px;">2010年9月，<font color="#FF0000">Hive</font>( Facebook) 脱离Hadoop，成为Apache顶级项目。</li>
+              <li style="padding: 0px; margin: 0px;">2010年9月，<font color="#FF0000">Pig</font>脱离Hadoop，成为Apache顶级项目。</li>
+              <li style="padding: 0px; margin: 0px;">2011年1月，<font color="#FF0000">ZooKeeper</font> 脱离Hadoop，成为Apache顶级项目。</li>
+              <li style="padding: 0px; margin: 0px;">2011年3月，Apache Hadoop获得Media
+              Guardian Innovation Awards 。</li>
+              <li style="padding: 0px; margin: 0px;">2011年3月， Platform Computing
+              宣布在它的Symphony软件中支持Hadoop MapReduce API。</li>
+              <li style="padding: 0px; margin: 0px;">2011年5月，Mapr
+                Technologies公司推出分布式文件系统和MapReduce引擎——MapR Distribution for Apache
+              Hadoop。</li>
+              <li style="padding: 0px; margin: 0px;">2011年5月，<font color="#FF0000">HCatalog</font> 1.0发布。该项目由Hortonworks
+                在2010年3月份提出，HCatalog主要用于解决数据存储、元数据的问题，主要解决HDFS的瓶颈，它提供了一个地方来存储数据的状态信息，这使得
+              数据清理和归档工具可以很容易的进行处理。</li>
+              <li style="padding: 0px; margin: 0px;">2011年4月，<font color="#FF0000">SGI</font>( Silicon Graphics International )基于SGI
+              Rackable和CloudRack服务器产品线提供Hadoop优化的解决方案。</li>
+              <li style="padding: 0px; margin: 0px;">
+                2011年5月，EMC为客户推出一种新的基于开源Hadoop解决方案的数据中心设备——GreenPlum
+              HD，以助其满足客户日益增长的数据分析需求并加快利用开源数据分析软件。Greenplum是EMC在2010年7月收购的一家开源数据仓库公司。</li>
+              <li style="padding: 0px; margin: 0px;">2011年5月，在收购了Engenio之后，
+              NetApp推出与Hadoop应用结合的产品E5400存储系统。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2011年6月，Calxeda公司(之前公司的名字是Smooth-Stone)发起了“开拓者行动”，一个由10家软件公司组成的团队将为基于Calxeda即将推出的ARM系统         上芯片设计的服务器提供支持。并为Hadoop提供低功耗服务器技术。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2011年6月，数据集成供应商Informatica发布了其旗舰产品，产品设计初衷是处理当今事务和社会媒体所产生的海量数据，同时支持Hadoop。</li>
+              <li style="padding: 0px; margin: 0px;">2011年7月，Yahoo!和硅谷风险投资公司
+                Benchmark Capital创建了Hortonworks
+              公司，旨在让Hadoop更加鲁棒(可靠)，并让企业用户更容易安装、管理和使用Hadoop。</li>
+              <li style="padding: 0px; margin: 0px;">
+              2011年8月，Cloudera公布了一项有益于合作伙伴生态系统的计划——创建一个生态系统，以便硬件供应商、软件供应商以及系统集成商可以一起探索如何         使用Hadoop更好的洞察数据。</li>
+              <li style="padding: 0px; margin: 0px;">
+                2011年8月，Dell与Cloudera联合推出Hadoop解决方案——Cloudera Enterprise。Cloudera
+                Enterprise基于Dell PowerEdge C2100机架服务器以及Dell PowerConnect
+              6248以太网交换机&nbsp;<wbr></li>
+            </ul>
+          </div>
+          </div>
+          <!-- Global Bootstrap settings
+          ================================================== -->
+          <!-- JS and analytics only. -->
+          <!-- Bootstrap core JavaScript
+          ================================================== -->
+          <!-- Placed at the end of the document so the pages load faster -->
+          <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+          <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+          <script src="http://cdn.bootcss.com/holder/2.0/holder.min.js"></script>
+          <script src="http://cdn.bootcss.com/highlight.js/7.3/highlight.min.js"></script>
+          <script >hljs.initHighlightingOnLoad();</script>
+          <script src="applications.js"></script>
+          <!-- Analytics
+          ================================================== -->
+          <script type="text/javascript">
+          var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+          document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3d8e7fc0de8a2a75f2ca3bfe128e6391' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+        </body>
+      </html>
